@@ -1,7 +1,6 @@
 const mongoose = require('mongoose');
 const Kafka = require('kafkajs');
 const productSchema = require('./Schema/Product');
-dotenv.config();
 
 try {
     mongoose.set("strictQuery", false);
