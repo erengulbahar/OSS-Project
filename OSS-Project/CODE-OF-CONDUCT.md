@@ -1,17 +1,11 @@
 # Code of Conduct
 
-We are committed to providing a welcoming and inclusive environment for everyone who contributes to the BLM3062-Project, regardless of race, gender identity or expression, sexual orientation, disability, age, appearance, religion, or any other characteristic that makes them who they are.
+We are deeply committed to fostering a welcoming and inclusive atmosphere for everyone involved in the BLM3062-Project, irrespective of attributes such as race, gender identity or expression, sexual orientation, disability, age, appearance, religion, or any unique individual characteristics.
 
-As a contributor, you are expected to:
+As someone contributing to this project, it's expected of you to:
 
-Be respectful and considerate in all interactions with other contributors.
-Listen actively and be open to different perspectives and ideas.
-Refrain from making personal attacks or derogatory comments.
-Avoid language or behavior that is discriminatory, offensive, or harmful.
-Respect others' privacy and personal boundaries.
-Be mindful of the impact your words and actions may have on others.
-If you witness or experience any behavior that violates this Code of Conduct, please report it to the project maintainers by emailing hakantekir2002@outlook.com. All reports will be kept confidential.
+Engage respectfully and thoughtfully in all interactions with fellow contributors. Actively listen and be receptive to diverse perspectives and ideas. Avoid personal attacks or disparaging remarks. Steer clear of discriminatory, offensive, or harmful language or behaviour. Respect the privacy and personal space of others. Be cognizant of the potential impact of your words and actions on others. If you come across or are subjected to any behaviour contravening this Code of Conduct, please report it to the project overseers by emailing "erenngulbahar@gmail.com". Rest assured, all reports will be confidentially maintained.
 
-Any contributor who violates this Code of Conduct may be temporarily or permanently removed from the project at the discretion of the project maintainers.
+Any contributor who infringes upon this Code of Conduct may face temporary or permanent exclusion from the project, as decided by the project overseers.
 
-By participating in the BLM3062-Project project, you agree to abide by this Code of Conduct. Thank you for helping us create a positive and inclusive community.
+By engaging in the BLM3062-Project project, you consent to abide by this Code of Conduct. We appreciate your efforts in helping us build a positive and inclusive community.
