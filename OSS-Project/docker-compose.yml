@@ -8,7 +8,7 @@ services:
     ports:
       - 22181:2181
     networks:
-      - app-network
+      - kafka-app
 
   kafka:
     image: confluentinc/cp-kafka:latest
@@ -19,12 +19,12 @@ services:
     environment:
       KAFKA_BROKER_ID: 1
       KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
-      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9092,PLAINTEXT_HOST://localhost:29092
+      KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://kafka:9300,PLAINTEXT_HOST://localhost:29092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_HOST:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
     networks:
-      - app-network
+      - kafka-app
 
   producer:
     build: ./Producer
@@ -34,29 +34,29 @@ services:
       - ./Producer/.env
     restart: always
     networks:
-      - app-network
+      - kafka-app
 
-  consumer-1:
+  first-consumer:
     build: ./Consumer
     depends_on:
       - kafka
     restart: always
     networks:
-      - app-network
-  consumer-2:
+      - kafka-app
+  second-consumer:
     build: ./Consumer
     depends_on:
       - kafka
     restart: always
     networks:
-      - app-network
-  consumer-3:
+      - kafka-app
+  third-consumer:
     build: ./Consumer
     depends_on:
       - kafka
     restart: always
     networks:
-      - app-network
+      - kafka-app
 networks:
-  app-network:
+  kafka-app:
     driver: bridge
