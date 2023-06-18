@@ -17,7 +17,7 @@ Firsly, clone this repository:
 Secondly, you have to write to your special URI in "CONNECTION_URI" field:
 
    ```
-   ATLAS_URI=<your_atlas_uri>
+   CONNECTION_URI = "CONNECTION_URI"
    ```
 
 Finally, you can start the application using `docker-compose`. Run the following command:
