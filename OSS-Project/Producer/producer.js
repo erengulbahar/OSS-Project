@@ -1,26 +1,24 @@
 const mongoose = require('mongoose');
-const dotenv = require('dotenv');
 const Kafka = require('kafkajs');
 const productSchema = require('./Schema/Product');
 dotenv.config();
 
 try {
     mongoose.set("strictQuery", false);
-    mongoose.connect(process.env.ATLAS_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-    console.log("Connected to Mongo Successfully!");
+    mongoose.connect("CONNECTION_URI");
 } catch (error) {
     console.log(error);
 }
 
 const kafka = new Kafka.Kafka ({
-    clientId: 'my-app',
-    brokers: ['kafka:9092']
+    clientId: 'my-kafka',
+    brokers: ['kafka:9300']
 });
 
 const producer = kafka.producer();
 producer.connect();
 
-const getLastDocument = async () => {
+const getDocument = async () => {
     try {
         return await productSchema.findOne().sort({ _id: -1 });
     } catch (error) {
@@ -30,7 +28,6 @@ const getLastDocument = async () => {
 
 async function produceMessage(product) {
     try {
-        console.log(product);
         await producer.send({
             topic: 'product',
             messages: [
@@ -42,7 +39,7 @@ async function produceMessage(product) {
     }
 }
 
-getLastDocument().then(async (lastDocument) => {
+getDocument().then(async (lastDocument) => {
     if (!lastDocument) {
         const product = new productSchema({
             value: 0
