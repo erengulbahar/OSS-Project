@@ -1,13 +1,13 @@
 # Notice
 
-This repository contains the source code for the BLM3062-Project project, which is a backend API for a mobile app that allows users to order groceries for delivery straight to their door. The API is built using Node.js and MongoDB, and includes a database schema design, implementation of API endpoints, and secure data transmission.
+This repository hosts the source code for the BLM3062-Project, a backend API dedicated to a mobile application that facilitates users in ordering groceries for home delivery. Built using Node.js and MongoDB, the API encompasses database schema design, the establishment of API endpoints, and the assurance of secure data transfer.
 
-The project is licensed under the MIT License, which allows for the code to be used, modified, and distributed, both commercially and non-commercially, with no warranty or liability from the original author.
+The project falls under the MIT License, permitting use, modification, and distribution of the code for both commercial and non-commercial purposes, without warranty or liability assumed by the original author.
 
-Please note that while the code is intended to be functional and reliable, it may contain bugs or errors. Use of the code is at your own risk, and the original author is not responsible for any damage or loss resulting from its use.
+It's important to mention that, despite aiming for functionality and dependability, the code might contain bugs or errors. The usage of this code is solely at your own risk, with the original author being absolved of any responsibility for damage or loss arising from its use.
 
-Feel free to use this code for educational, personal, or commercial purposes, but please include the original license in any distribution or use of the code.
+You're encouraged to employ this code for educational, personal, or business pursuits, with the condition that the original license is included in any usage or distribution of the code.
 
-If you encounter any issues or have feature requests, please submit them through the Issues section of this repository. While the original author may not be able to address all issues, they will be reviewed and considered.
+Should you come across any problems or have suggestions for additional features, kindly submit them via the Issues section of this repository. Although the original author might not be capable of addressing all issues, they will be examined and taken into account.
 
-Thank you for your interest in the BLM3062-Project project!
+We appreciate your interest in the BLM3062-Project project!

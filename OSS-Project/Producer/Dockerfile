@@ -1,5 +1,5 @@
-FROM node:18-alpine
-LABEL authors="hakantekir"
+FROM node:latest
+LABEL authors="erengulbahar"
 
 WORKDIR /usr/src/app
 COPY package*.json ./
