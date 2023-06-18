@@ -4,38 +4,24 @@ This repository contains a simple Change Data Capture (CDC) application develope
 
 ## Project Summary
 
-This project aims to develop two applications, a producer and a consumer. The producer application queries a specified collection in MongoDB every 10 seconds to detect newly added documents since its previous run. It then produces a JSON message for each new document and publishes it to a specified Kafka topic. The consumer application consumes messages from the Kafka topic and prints them to the console.
-
-## Technologies Used
-
-- Node.js
-- KafkaJS
-- Mongoose
-- ZooKeeper
-- Docker
+The goal of this project is to create two applications, namely a producer and a consumer. The producer application, set to interrogate a specified collection in MongoDB at ten-second intervals, is designed to identify documents recently added since its last operation. For each new document, it generates a JSON message and transmits it to a defined Kafka topic. On the other hand, the consumer application is tasked with receiving messages from the Kafka topic and outputting them onto the console. And I used to Node.js, KafkaJS, Mongoose for MongoDB, ZooKeeper and of course Docker!
 
 ## Getting Started
 
-To build and run the applications, follow these steps:
-
-1. Clone this repository:
+Firsly, clone this repository:
 
    ```bash
-   git clone https://github.com/hakantekir/BLM3062-Project.git
+   git clone https://github.com/erengulbahar/OSS-Project.git
    ```
 
-2. Create an `.env` file in the project directory. Open the `.env` file in a text editor and add the following line:
+Secondly, you have to write to your special URI in "CONNECTION_URI" field:
 
    ```
    ATLAS_URI=<your_atlas_uri>
    ```
 
-3. Now, you can start the application using `docker-compose`. Run the following command:
+Finally, you can start the application using `docker-compose`. Run the following command:
 
    ```bash
    docker-compose up
    ```
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
