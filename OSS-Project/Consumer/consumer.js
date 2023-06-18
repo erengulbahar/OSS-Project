@@ -1,16 +1,16 @@
 const Kafka = require('kafkajs');
 
 const kafka = new Kafka.Kafka ({
-    clientId: 'my-app',
-    brokers: ['kafka:9092']
+    clientId: 'my-kafka',
+    brokers: ['kafka:9300']
 });
 
-const consumer = kafka.consumer({ groupId: 'my-group' });
+const consumer = kafka.consumer({ groupId: 'my-groups' });
 consumer.connect();
 consumer.subscribe({ topic: 'product'});
 
 consumer.run({
     eachMessage: async ({ message }) => {
-        console.log("New message: "+message.value.toString());
+        console.log("New message is => "+message.value.toString());
     }
 });
